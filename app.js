@@ -8,15 +8,11 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
-
-var timeLine = require('./routes/timeLine');
 // Example route
-// var user = require('./routes/user');
-
+var index = require('./routes/index');
+var timeLine = require('./routes/timeLine');
 var description = require('./routes/description');
-var exercises = require('./routes/exercises');
-var added = require('./routes/added');
+
 
 
 var app = express();
@@ -50,14 +46,7 @@ app.get('/timeline', timeLine.addTimeLine);
 
 
 app.get('/description', description.addDescription);
-app.get('/exercises', exercises.getExercises);
-app.get('/added', added.add);
 
-
-
-
-// Example route
-// app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
