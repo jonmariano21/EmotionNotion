@@ -14,7 +14,7 @@ var timeLine = require('./routes/timeLine');
 // Example route
 // var user = require('./routes/user');
 
-var task = require('./routes/task');
+var description = require('./routes/description');
 var exercises = require('./routes/exercises');
 var added = require('./routes/added');
 
@@ -49,7 +49,7 @@ app.get('/', index.view)
 app.get('/timeLine', timeLine.view);
 
 
-app.get('/task', task.addTask);
+app.get('/description', description.addDescription);
 app.get('/exercises', exercises.getExercises);
 app.get('/added', added.add);
 
