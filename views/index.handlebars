@@ -35,10 +35,15 @@
                             <input class="btn btn-default" type="button"  onClick="parent.location='/task' "value="New Task" style="float: right;">
                         </h1>
 
+         <table>               
+            <tr>
                 {{#each emotions}}
                  <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/task'"> 
                
                 {{/each}}
+            </tr>    
+        </table>
+
 
                     </div>
                 </div>
