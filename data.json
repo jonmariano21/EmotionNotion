@@ -1,11 +1,52 @@
 {
-	"tasks": [
+	"emotions": [
 		{
-			"Emotion": "happy",
-			"date": "2/9/2015",
-			"priority": "fuck it",
-			"description": "Jon Mariano is fucking AWESOME!!!!!!!!"
+			"name": "Angry",
+			"imageURL": "http://oi57.tinypic.com/2s60cd0.jpg"			
+		},
+		{
+			"name": "Confident",
+			"imageURL": "http://i58.tinypic.com/1z568ba_th.png"			
+		},
+		{
+			"name": "Confused",
+			"imageURL": "http://oi62.tinypic.com/6gx8ia.jpg"			
+		},
+		{
+			"name": "Depressed",
+			"imageURL": "http://i62.tinypic.com/2elay6h_th.png"			
+		},
+		{
+			"name": "Ecstatic",
+			"imageURL": "http://i60.tinypic.com/jto1zd_th.png"
+		},
+		{
+			"name": "Embarrassed",
+			"imageURL": "http://oi60.tinypic.com/2urxslf.jpg"
+		},
+		{
+			"name": "Exhausted",
+			"imageURL": "http://oi58.tinypic.com/2cxb9ld.jpg"
+		},
+		{
+			"name": "Frustrated",
+			"imageURL": "http://oi60.tinypic.com/2zojds6.jpg"
+		},
+		{
+			"name": "Happy",
+			"imageURL": "http://oi62.tinypic.com/2imafp.jpg"
+		},
+		{
+			"name": "Love",
+			"imageURL": "http://oi60.tinypic.com/1sfek0.jpg"
+		},
+		{
+			"name": "Overwhelmed",
+			"imageURL": "http://i62.tinypic.com/4ki8pl_th.png"
+		},
+		{
+			"name": "Sad",
+			"imageURL": "http://oi62.tinypic.com/2uepgxy.jpg"
 		}
-	
 	]
 }
