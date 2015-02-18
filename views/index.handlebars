@@ -34,24 +34,12 @@
                             <small>FUCK HEROKU </small>
                             <input class="btn btn-default" type="button"  onClick="parent.location='/task' "value="New Task" style="float: right;">
                         </h1>
-                        {{#each tasks}}
-                        <div class="task">
-                            <h2 class="task_heading" > Name: </h2>
-                            <h3 class="task_name" > {{name}}</h3>
-                            <br>
-                            <h2 class="task_heading" > Date: </h2>
-                            <h3 class="task_date" >{{date}}</h3>
-                            <br>
-                            <h2 class="task_heading" style="display:inline"> Priority: </h2>
-                            <h3 class="task_priority" style="display:inline">{{priority}}</3>
-                            <br>
-                            <h2 class="task_heading" style="display:inline"> Description: </h2> 
-                            <h3 class="task_description"style="display:inline">{{description}}</h3>
-                            <br><br><br>
 
+                {{#each emotions}}
+                 <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/task'"> 
+               
+                {{/each}}
 
-                        </div>
-                        {{/each}}
                     </div>
                 </div>
                 <!-- /.row -->
