@@ -13,17 +13,11 @@ var index = require('./routes/index');
 var timeLine = require('./routes/timeLine');
 // Example route
 // var user = require('./routes/user');
-var signinpage = require('./routes/signinpage');
-var page = require('./routes/page');
-task = require('./routes/task');
+
+var task = require('./routes/task');
 var exercises = require('./routes/exercises');
 var added = require('./routes/added');
-var about = require('./routes/about');
-var newuser = require('./routes/newuser');
-var forgotpwd = require('./routes/forgotpassword');
-var signout = require ('./routes/signout');
-var help = require ('./routes/help');
-var analysis = require ('./routes/analysis');
+
 
 var app = express();
 
@@ -55,16 +49,10 @@ app.get('/', index.view)
 app.get('/timeLine', timeLine.view);
 
 
-app.get('/blank-page', page.viewPage);
 app.get('/task', task.addTask);
 app.get('/exercises', exercises.getExercises);
 app.get('/added', added.add);
-app.get('/about', about.about);
-app.get('/newuser', newuser.newuser);
-app.get('/forgotpassword', forgotpwd.forgotpassword);
-app.get('/signinpage', signout.signout);
-app.get('/help', help.getHelp);
-app.get('/analysis', analysis.getAnalysis);
+
 
 
 // Example route
