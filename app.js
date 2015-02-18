@@ -44,7 +44,6 @@ if ('development' == app.get('env')) {
 
 //app.get('/add', add.addFriend);
 // Add routes here
-//app.get('/', signinpage.signin);
 app.get('/', index.view)
 app.get('/timeLine', timeLine.view);
 
@@ -52,6 +51,7 @@ app.get('/timeLine', timeLine.view);
 app.get('/description', description.addDescription);
 app.get('/exercises', exercises.getExercises);
 app.get('/added', added.add);
+
 
 
 

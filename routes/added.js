@@ -7,6 +7,7 @@ exports.add = function(req, res) {
 
 
 	//res.render('added'); 
+	
   	var newTask = 
 	{
 		'name': req.query.name,
@@ -21,6 +22,7 @@ exports.add = function(req, res) {
 
 	console.log(newTask);
 	data["emotions"].push(newTask);
+	
 	res.render('added', data);
 
 	  	

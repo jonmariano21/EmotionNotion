@@ -38,9 +38,9 @@
 				<div class = "collapse navbar-collapse navHeaderCollapse">
 					<ul class = "nav navbar-nav navbar-right">
 
-						<li class = "active"> <a href = "/"> Home </a> </li> <!--active makes Home indented-->
+						<li> <a href = "/"> Home </a> </li> 
 
-						<li> <a href = "/timeLine"> MyTimeline </a> </li>
+						<li class = "active"> <a href = "/timeLine"> MyTimeline </a> </li> <!--active makes Home indented-->
 
 					</ul>
 				</div>
@@ -63,11 +63,11 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         EmotionNotion
-                        <input class="btn btn-default" type="button"  onClick="parent.location='/task' "value="New Task" style="float: right;">
+                        <input class="btn btn-default" type="button"  onClick="parent.location='/description' "value="Add New Emotion" style="float: center;">
                     </h1>
 
             {{#each emotions}}
-             <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/task'"> 
+             <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/description'"> 
              
              {{name}}
              
