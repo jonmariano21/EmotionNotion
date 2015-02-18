@@ -20,7 +20,7 @@ exports.add = function(req, res) {
 	console.log("New task added:");
 
 	console.log(newTask);
-	data["tasks"].push(newTask);
+	data["emotions"].push(newTask);
 	res.render('added', data);
 
 	  	

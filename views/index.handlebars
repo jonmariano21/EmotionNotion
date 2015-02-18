@@ -49,12 +49,13 @@
         <!-- END END END NAVBAR			
         ======================================================================================================================================= -->	
 
-
-		<h1 id="howDoYouFeel"> How do you feel? </h1>
+		
 		
 		<!-- EMOTIONS
 		===============================================================================================================================-->	
-		<div class="container">	
+		<div class="container">
+		
+			<h1 id="howDoYouFeel"> How do you feel? </h1>	
 			
 			<table>
 				<!-- First ROW -->
@@ -63,28 +64,28 @@
 						<!-- Confused
 						================================================== CONFUSED ============================================= 	-->	
 						<div class="emotion">
-							<img src="../../Emotions/confused.PNG" data-toggle="modal" data-target="#emotionModal" alt="confused">
+							<img src="http://oi62.tinypic.com/6gx8ia.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Angry
 					    ================================================== ANGRY =============================================== 	-->	
 						<div class="emotion">
-							<img src="Emotions/angry.PNG" data-toggle="modal" data-target="#emotionModal" alt="angry">
+							<img src="http://oi57.tinypic.com/2s60cd0.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Ecstatic
 						================================================== ECSTATIC ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/ecstatic.PNG" data-toggle="modal" data-target="#emotionModal" alt="ecstatic">
+							<img src="http://i60.tinypic.com/jto1zd_th.png" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- EXHAUSTED
 						================================================== EXHAUSTED ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/exhausted.PNG" data-toggle="modal" data-target="#emotionModal" alt="exhausted">
+							<img src="http://oi58.tinypic.com/2cxb9ld.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					
@@ -96,28 +97,28 @@
 						<!-- Confident
 						================================================== CONFIDENT ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/confident.PNG" data-toggle="modal" data-target="#emotionModal" alt="confident">
+							<img src="http://i58.tinypic.com/1z568ba_th.png" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Happy
 					    ================================================== HAPPY =============================================== 	-->	
 						<div class="emotion">
-							<img src="Emotions/happy.PNG" data-toggle="modal" data-target="#emotionModal" alt="happy">
+							<img src="http://oi62.tinypic.com/2imafp.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Overwhelmed
 						================================================== OVERWHELMED ========================================== 	-->	
 						<div class="emotion">
-							<img src="Emotions/overwhelmed.PNG" data-toggle="modal" data-target="#emotionModal" alt="overwhelmed">
+							<img src="http://i62.tinypic.com/4ki8pl_th.png" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Sad
 						================================================== SAD ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/sad.PNG" data-toggle="modal" data-target="#emotionModal" alt="sad">
+							<img src="http://oi62.tinypic.com/2uepgxy.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					
@@ -130,28 +131,28 @@
 						<!-- Depressed
 						================================================== DEPRESSED ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/depressed.PNG" data-toggle="modal" data-target="#emotionModal" alt="depressed">
+							<img src="http://i62.tinypic.com/2elay6h_th.png" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Embarrassed
 					    ================================================== EMBARRASSED =========================================== 	-->	
 						<div class="emotion">
-							<img src="Emotions/embarrassed.PNG" data-toggle="modal" data-target="#emotionModal" alt="embarrassed">
+							<img src="http://oi60.tinypic.com/2urxslf.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Frustrated
 						================================================== FRUSTRATED ========================================== 	-->	
 						<div class="emotion">
-							<img src="Emotions/frustrated.PNG" data-toggle="modal" data-target="#emotionModal" alt="frustrated">
+							<img src="http://oi60.tinypic.com/2zojds6.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					<td> 
 						<!-- Love
 						================================================== LOVE ============================================= 	-->	
 						<div class="emotion">
-							<img src="Emotions/love.PNG" data-toggle="modal" data-target="#emotionModal" alt="love">
+							<img src="http://oi60.tinypic.com/1sfek0.jpg" onClick="parent.location='/task' ">
 						</div> 
 					</td>
 					
@@ -166,46 +167,51 @@
 
 
 <!---------------------------------------------------------------------------TIMELINE SHIT------------------------------------------------------------------------------------->
-	<div id="wrapper">
-		<!-- SHOULD BE TIMELINE SHIT -->
-        <div id="page-wrapper">
+	
+			
+		<div class="container">
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        EmotionNotion
+                        <input class="btn btn-default" type="button"  onClick="parent.location='/task' "value="New Task" style="float: right;">
+                    </h1>
 
-            <div class="container-fluid">
+            {{#each emotions}}
+             <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/task'"> 
+             
+             {{name}}
+             
+             {{description}}
+           
+            {{/each}}
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            EmotionNotion
-                            <small>FUCK HEROKU </small>
-                            <input class="btn btn-default" type="button"  onClick="parent.location='/task' "value="New Task" style="float: right;">
-                        </h1>
-
-                {{#each emotions}}
-                 <img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/task'"> 
-               
-                {{/each}}
-
-                    </div>
                 </div>
-                <!-- /.row -->
-
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.row -->
+		</div><!-- Close CONTAINER -->
 
-        </div>
-        <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
+  
     
-    <!-- END END TIMELINE SHIT -->
+    <!---------------------------- END END TIMELINE SHIT ---------------------------------->
+    
+    
+    
+
+    
+    
+    
+    
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script src="homePage.js"></script>
 
 </body>
 
