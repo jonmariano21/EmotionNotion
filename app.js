@@ -45,7 +45,8 @@ if ('development' == app.get('env')) {
 //app.get('/add', add.addFriend);
 // Add routes here
 app.get('/', index.view)
-app.get('/timeLine', timeLine.view);
+//app.get('/timeLine', timeLine.view);
+app.get('/timeline', timeLine.addTimeLine);
 
 
 app.get('/description', description.addDescription);
