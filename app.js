@@ -12,7 +12,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var timeLine = require('./routes/timeLine');
 var description = require('./routes/description');
-
+var about = require('./routes/about');
 
 
 var app = express();
@@ -40,11 +40,11 @@ if ('development' == app.get('env')) {
 
 //app.get('/add', add.addFriend);
 // Add routes here
-app.get('/', index.view)
+app.get('/', index.view);
 //app.get('/timeLine', timeLine.view);
 app.get('/timeline', timeLine.addTimeLine);
+app.get('/about', about.about);
 
-app.get('/index', index.view);
 app.get('/description', description.addDescription);
 
 
