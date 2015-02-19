@@ -2,13 +2,6 @@
 
 var data = require('../data.json');
 
-/*
-exports.view = function(req, res){
-  res.render('timeLine');
-};
-*/
-
-
 exports.addTimeLine = function(req, res) { 
 	// Your code goes here
 
@@ -18,14 +11,13 @@ exports.addTimeLine = function(req, res) {
   	var newEntry = 
 	{
 		'name': req.query.name,
-		'date': req.query.date,
-		'priority': req.query.priority,
+		'imageURL': req.query.imageURL,
 		'description': req.query.description,
 	}
 	;
 
 
-	console.log("New task added:");
+	console.log("New Entry has been added:");
 
 	console.log(newEntry);
 	data["emotions"].push(newEntry);

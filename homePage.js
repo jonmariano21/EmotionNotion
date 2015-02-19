@@ -1,11 +1,7 @@
-$('#confused').on(function (event) {
- 	alert("yoyoyoyo");
-})
-
-
-function saveToTimeLine(){
-	alert("yo");
-	<a href = "timeLine.html"> </a> </li>;
-}
+$('img').click(function () {
+	console.log(this.id);
+	var emotion = this.id;
+ 	alert(emotion);
+});
 
 
