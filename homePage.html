@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+		<!-- CSS -->		
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="landing.css" rel="stylesheet" type="text/css">
+
+		<title>Team Dos</title>
+		
+	</head>
+			
+
+	
+	
+	<!-- NAVBAR
+	======================================================================================================================================= -->	   	
+	    <div class = "navbar navbar-inverse navbar-static-top"> <!--Black bar accross the top-->
+			<div class = "container">
+				<a href = "homePage.html" class = "navbar-brand"> Emotion Notion </a>
+
+				<!--Create Button-->
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse"> <!--When this button is pressed it targets navHeadercollapse-->
+
+					<!--#of Lines in the mobile sized dropdown button-->
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+
+				</button>
+
+				<!--Collapsable navbar-->
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+
+						<li class = "active"> <a href = "homePage.html"> Home </a> </li> <!--active makes Home indented-->
+
+						<li> <a href = "timeLine.html"> MyTimeline </a> </li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<h1 id="howDoYouFeel"> How do you feel? </h1>
+		
+		<!-- EMOTIONS
+		===============================================================================================================================-->	
+		<div class="container">	
+			
+			<table>
+				<!-- First ROW -->
+				<tr>
+					<td> 
+						<!-- Confused
+						================================================== CONFUSED ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/confused.PNG" data-toggle="modal" data-target="#emotionModal" alt="confused">
+						</div> 
+					</td>
+					<td> 
+						<!-- Angry
+					    ================================================== ANGRY =============================================== 	-->	
+						<div class="emotion">
+							<img src="Emotions/angry.PNG" data-toggle="modal" data-target="#emotionModal" alt="angry">
+						</div> 
+					</td>
+					<td> 
+						<!-- Ecstatic
+						================================================== ECSTATIC ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/ecstatic.PNG" data-toggle="modal" data-target="#emotionModal" alt="ecstatic">
+						</div> 
+					</td>
+					<td> 
+						<!-- EXHAUSTED
+						================================================== EXHAUSTED ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/exhausted.PNG" data-toggle="modal" data-target="#emotionModal" alt="exhausted">
+						</div> 
+					</td>
+					
+					
+				</tr>
+				<!-- 2nd Row -->
+				<tr>
+					<td> 
+						<!-- Confident
+						================================================== CONFIDENT ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/confident.PNG" data-toggle="modal" data-target="#emotionModal" alt="confident">
+						</div> 
+					</td>
+					<td> 
+						<!-- Happy
+					    ================================================== HAPPY =============================================== 	-->	
+						<div class="emotion">
+							<img src="Emotions/happy.PNG" data-toggle="modal" data-target="#emotionModal" alt="happy">
+						</div> 
+					</td>
+					<td> 
+						<!-- Overwhelmed
+						================================================== OVERWHELMED ========================================== 	-->	
+						<div class="emotion">
+							<img src="Emotions/overwhelmed.PNG" data-toggle="modal" data-target="#emotionModal" alt="overwhelmed">
+						</div> 
+					</td>
+					<td> 
+						<!-- Sad
+						================================================== SAD ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/sad.PNG" data-toggle="modal" data-target="#emotionModal" alt="sad">
+						</div> 
+					</td>
+					
+					
+				</tr>
+				
+				<!-- 3rd Row -->
+				<tr>
+					<td> 
+						<!-- Depressed
+						================================================== DEPRESSED ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/depressed.PNG" data-toggle="modal" data-target="#emotionModal" alt="depressed">
+						</div> 
+					</td>
+					<td> 
+						<!-- Embarrassed
+					    ================================================== EMBARRASSED =========================================== 	-->	
+						<div class="emotion">
+							<img src="Emotions/embarrassed.PNG" data-toggle="modal" data-target="#emotionModal" alt="embarrassed">
+						</div> 
+					</td>
+					<td> 
+						<!-- Frustrated
+						================================================== FRUSTRATED ========================================== 	-->	
+						<div class="emotion">
+							<img src="Emotions/frustrated.PNG" data-toggle="modal" data-target="#emotionModal" alt="frustrated">
+						</div> 
+					</td>
+					<td> 
+						<!-- Love
+						================================================== LOVE ============================================= 	-->	
+						<div class="emotion">
+							<img src="Emotions/love.PNG" data-toggle="modal" data-target="#emotionModal" alt="love">
+						</div> 
+					</td>
+					
+					
+				</tr>
+				
+			</table> <!-- close table -->
+			
+		</div><!-- close container-->
+		
+		
+		
+	<!-- MODAL Pop Up when emotion is clicked
+	===============================================================================================================================-->				
+	<div class="modal fade" id="emotionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		    
+		      <!-- Modal Header -->
+		      <div class="modal-header">
+		      	<!-- Put Image the user clicks on here -->
+		        
+		      </div>
+		      
+		      <!-- Modal Body -->
+		      <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="message-text" class="control-label">Why do you feel this way?</label>
+					<textarea class="form-control" id="message-text"></textarea>		          
+				  </div>
+		        </form>
+		      </div>
+		      
+		      <!-- Modal Footer -->
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <!--
+		        <button onclick="saveToTimeLine()" type="button" class="btn btn-primary">Send to Timeline</button>
+		        -->
+		        
+		        <a href = "timeLine.html"> Send To Time Line </a>
+		      </div>
+		      
+		    </div>
+		  </div>
+	</div>
+		
+		
+		
+		
+
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script><!--JS Fiddle EXample-->
+
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="homePage.js"></script>	
+		
+
+
+
+
+
+
+
+		
+	</body>
+</html>

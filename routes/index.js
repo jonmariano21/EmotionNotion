@@ -5,7 +5,3 @@ exports.view = function(req, res){
   res.render('index');
 };
 
-exports.view = function(req, res){
-	console.log(data);
-	res.render('index', data);
-};

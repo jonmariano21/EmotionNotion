@@ -8,20 +8,12 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
 // Example route
-// var user = require('./routes/user');
-var signinpage = require('./routes/signinpage');
-var page = require('./routes/page');
-task = require('./routes/task');
-var exercises = require('./routes/exercises');
-var added = require('./routes/added');
-var about = require('./routes/about');
-var newuser = require('./routes/newuser');
-var forgotpwd = require('./routes/forgotpassword');
-var signout = require ('./routes/signout');
-var help = require ('./routes/help');
-var analysis = require ('./routes/analysis');
+var index = require('./routes/index');
+var timeLine = require('./routes/timeLine');
+var description = require('./routes/description');
+
+
 
 var app = express();
 
@@ -48,22 +40,13 @@ if ('development' == app.get('env')) {
 
 //app.get('/add', add.addFriend);
 // Add routes here
-//app.get('/', signinpage.signin);
 app.get('/', index.view)
-app.get('/blank-page', page.viewPage);
-app.get('/task', task.addTask);
-app.get('/exercises', exercises.getExercises);
-app.get('/added', added.add);
-app.get('/about', about.about);
-app.get('/newuser', newuser.newuser);
-app.get('/forgotpassword', forgotpwd.forgotpassword);
-app.get('/signinpage', signout.signout);
-app.get('/help', help.getHelp);
-app.get('/analysis', analysis.getAnalysis);
+//app.get('/timeLine', timeLine.view);
+app.get('/timeline', timeLine.addTimeLine);
 
 
-// Example route
-// app.get('/users', user.list);
+app.get('/description', description.addDescription);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
