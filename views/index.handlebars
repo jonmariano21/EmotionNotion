@@ -36,7 +36,7 @@
 		        {
 		                s = "0"+s;
 		        }
-		        result = 'Today is '+days[day]+', '+months[month]+' '+d+', '+year+' at '+h+':'+m+':'+s+'.';
+		        result = 'It is '+days[day]+', '+months[month]+' '+d+', '+year+' at '+h+':'+m+':'+s+'.';
 		        document.getElementById(id).innerHTML = result;
 		        setTimeout('date_time("'+id+'");','1000');
 		        return true;
@@ -70,25 +70,29 @@
 
 						<li class = "active"> <a href = "/"> Home </a> </li> <!--active makes Home indented-->
 
-						<li> <a href = "/about"> About </a></li>
+						<li> <a href = "/about"> About Us</a></li>
 
-						<li> <a href = "/timeLine"> MyTimeline </a> </li>
+						<li> <a href = "/timeLine"> My Timeline </a> </li>
+
+						<li> <a href = "/help"> Help </a> </li>	
+
+						<li> <a href = "/contact"> Contact </a></li>	
 
 					</ul>
 				</div>
 			</div>
 		</div>
         <!-- END END END NAVBAR			
-        ======================================================================================================================================= -->	
-
-        <!----- TIME ---->
-        <h4 style="margin-left:115px;"><span id="date_time"></span></h4>
-        <script type="text/javascript">window.onload = date_time('date_time');</script>		
+        ======================================================================================================================================= -->		
 		
 		<!-- EMOTIONS
 		===============================================================================================================================-->	
 		<div class="container">
 		
+        <!----- TIME ---->
+        <h4><span id="date_time"></span></h4>
+        <script type="text/javascript">window.onload = date_time('date_time');</script>	
+
 			<h1 id="howDoYouFeel"> How are you feeling right now? </h1>	
 			<h5 style="margin-left:10px;"> Select an emotion to get started.</h5>
 			<table>
