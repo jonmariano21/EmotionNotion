@@ -61,24 +61,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>
-                        EmotionNotion
-<<<<<<< HEAD
-                        <input class="btn btn-default" type="button"  onClick="parent.location='/index' "value="Add New Emotion" style="float: center;">
-=======
-                        
-                        <input class="btn btn-default" type="button"  onClick="parent.location='/description' "value="Add New Emotion" style="float: center;">
->>>>>>> origin/JON
+                        My Timeline
+
+                        <input class="btn btn-default" type="button"  onClick="parent.location='/index' "value="Add New Emotion" style="float: right;">
+
                     </h1>
+                    <h5> Displays your past emotions</h5>
 
 		            {{#each emotions}}
+		            <center>
 		             	<img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/description'"> 
-		             
-					 	<!-- {{name}} -->
-					 	
-		             
+		            
+					 	<!-- {{name}} -->		             
 					 	{{description}}
-					 	
-		           
+		            </center> </br></br>
 		            {{/each}}
 
                 </div> <!-- Close COL -->

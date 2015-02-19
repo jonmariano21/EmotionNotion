@@ -9,7 +9,39 @@
 	
 	    <!-- CSS -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="landing.css" rel="stylesheet" type="text/css">
+
+	    <!--- Javascript for the time -->
+	    <script>
+		    function date_time(id)
+			{
+		        date = new Date;
+		        year = date.getFullYear();
+		        month = date.getMonth();
+		        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+		        d = date.getDate();
+		        day = date.getDay();
+		        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+		        h = date.getHours();
+		        if(h<10)
+		        {
+		                h = "0"+h;
+		        }
+		        m = date.getMinutes();
+		        if(m<10)
+		        {
+		                m = "0"+m;
+		        }
+		        s = date.getSeconds();
+		        if(s<10)
+		        {
+		                s = "0"+s;
+		        }
+		        result = 'Today is '+days[day]+', '+months[month]+' '+d+', '+year+' at '+h+':'+m+':'+s+'.';
+		        document.getElementById(id).innerHTML = result;
+		        setTimeout('date_time("'+id+'");','1000');
+		        return true;
+			}
+		</script>
 
 		<title>Emotion Notion</title>
 	
@@ -47,14 +79,17 @@
         <!-- END END END NAVBAR			
         ======================================================================================================================================= -->	
 
-		
+        <!----- TIME ---->
+
+        <h4 style="margin-left:115px;"><span id="date_time"></span></h4>
+        <script type="text/javascript">window.onload = date_time('date_time');</script>		
 		
 		<!-- EMOTIONS
 		===============================================================================================================================-->	
 		<div class="container">
 		
-			<h1 id="howDoYouFeel"> How do you feel? </h1>	
-			
+			<h1 id="howDoYouFeel"> How are you feeling right now? </h1>	
+			<h5 style="margin-left:10px;"> Select an emotion to get started.</h5>
 			<table>
 				<!-- First ROW -->
 				<tr>
