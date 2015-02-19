@@ -44,7 +44,7 @@ app.get('/', index.view)
 //app.get('/timeLine', timeLine.view);
 app.get('/timeline', timeLine.addTimeLine);
 
-app.get('/index', index.view);
+
 app.get('/description', description.addDescription);
 
 
