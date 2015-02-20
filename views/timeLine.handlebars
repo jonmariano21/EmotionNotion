@@ -39,9 +39,10 @@
 					<ul class = "nav navbar-nav navbar-right">
 
 						<li> <a href = "/"> Home </a> </li> 
-
-						<li class = "active"> <a href = "/timeLine"> MyTimeline </a> </li> <!--active makes Home indented-->
-
+						<li> <a href = "/about"> About Us </a></li>
+						<li class = "active"> <a href = "/timeLine"> My Timeline </a> </li> <!--active makes Home indented-->
+						<li> <a href = "/help"> Help </a> </li>	
+						<li> <a href = "/contact"> Contact </a></li>								
 					</ul>
 				</div>
 			</div>
@@ -61,20 +62,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>
-                        EmotionNotion
-                        
-                        <input class="btn btn-default" type="button"  onClick="parent.location='/description' "value="Add New Emotion" style="float: center;">
+                        My Timeline
+
+                        <input class="btn btn-default" type="button"  onClick="parent.location='/' "value="Add New Emotion" style="float: right;">
+
                     </h1>
+                    <h5> Displays your past emotions</h5>
 
 		            {{#each emotions}}
-		             	<img src="{{imageURL}}" class="img-responsive img-rounded" onClick="parent.location='/description'"> 
-		             
-					 	<!-- {{name}} -->
-					 	
-		             
+		            <center>
+		             	<img src="{{imageURL}}" class="img-responsive img-rounded" <!--onClick="parent.location='/description'-->"> 
+		            
+					 	<!-- {{name}} -->		             
 					 	{{description}}
-					 	
-		           
+		            </center> </br></br>
 		            {{/each}}
 
                 </div> <!-- Close COL -->
