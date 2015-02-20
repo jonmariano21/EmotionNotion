@@ -8,57 +8,7 @@
 		{
 			"name": "Confident",
 			"imageURL": "http://i58.tinypic.com/1z568ba_th.png",
-			"description": "I am angry because I failed my midterm!"			
-		},
-		{
-			"name": "Confused",
-			"imageURL": "http://oi62.tinypic.com/6gx8ia.jpg",
-			"description": "I am angry because I failed my midterm!"			
-		},
-		{
-			"name": "Depressed",
-			"imageURL": "http://i62.tinypic.com/2elay6h_th.png",
-			"description": "I am angry because I failed my midterm!"			
-		},
-		{
-			"name": "Ecstatic",
-			"imageURL": "http://i60.tinypic.com/jto1zd_th.png",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Embarrassed",
-			"imageURL": "http://oi60.tinypic.com/2urxslf.jpg",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Exhausted",
-			"imageURL": "http://oi58.tinypic.com/2cxb9ld.jpg",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Frustrated",
-			"imageURL": "http://oi60.tinypic.com/2zojds6.jpg",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Happy",
-			"imageURL": "http://oi62.tinypic.com/2imafp.jpg",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Love",
-			"imageURL": "http://oi60.tinypic.com/1sfek0.jpg",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Overwhelmed",
-			"imageURL": "http://i62.tinypic.com/4ki8pl_th.png",
-			"description": "I am angry because I failed my midterm!"
-		},
-		{
-			"name": "Sad",
-			"imageURL": "http://oi62.tinypic.com/2uepgxy.jpg",
-			"description": "I am angry because I failed my midterm!"
+			"description": "I am confident because I studied very hard this week!"			
 		}
 	]
 }
