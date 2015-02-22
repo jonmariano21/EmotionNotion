@@ -12,7 +12,9 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var timeLine = require('./routes/timeLine');
 var description = require('./routes/description');
-
+var about = require('./routes/about');
+var help = require('./routes/help');
+var contact = require('./routes/contact');
 
 
 var app = express();
@@ -40,12 +42,13 @@ if ('development' == app.get('env')) {
 
 //app.get('/add', add.addFriend);
 // Add routes here
-app.get('/', index.view)
+app.get('/', index.view);
 //app.get('/timeLine', timeLine.view);
 app.get('/timeline', timeLine.addTimeLine);
-
-
+app.get('/about', about.about);
+app.get('/help', help.getHelp);
 app.get('/description', description.addDescription);
+app.get('/contact', contact.contact);
 
 
 http.createServer(app).listen(app.get('port'), function(){
