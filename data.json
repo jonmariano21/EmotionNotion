@@ -1,14 +1,6 @@
 {
 	"emotions": [
 		{
-			"name": "Angry",
-			"imageURL": "http://oi57.tinypic.com/2s60cd0.jpg",
-			"description": "I am angry because I failed my midterm!"			
-		},
-		{
-			"name": "Confident",
-			"imageURL": "http://i58.tinypic.com/1z568ba_th.png",
-			"description": "I am confident because I studied very hard this week!"			
 		}
 	]
 }

@@ -7,11 +7,10 @@ exports.addTimeLine = function(req, res) {
 
 
 	//res.render('added'); 
-	
   	var newEntry = 
 	{
-		'name': req.query.name,
-		'imageURL': req.query.imageURL,
+		'name': req.query.face,
+		'imageURL': req.query.image_url,
 		'description': req.query.description,
 	}
 	;
@@ -20,6 +19,7 @@ exports.addTimeLine = function(req, res) {
 	console.log("New Entry has been added:");
 
 	console.log(newEntry);
+	
 	data["emotions"].push(newEntry);
 	
 	res.render('timeLine', data);

@@ -15,6 +15,7 @@ var description = require('./routes/description');
 var about = require('./routes/about');
 var help = require('./routes/help');
 var contact = require('./routes/contact');
+//var bodyParser = require('body-parser');
 
 
 var app = express();
@@ -25,6 +26,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
