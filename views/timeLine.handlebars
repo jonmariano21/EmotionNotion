@@ -13,28 +13,41 @@
 
 		<title>Emotion Notion</title>
 	<script>
-      jQuery(document).ready(function() {
+
+      $(document).ready(function() {
           var offset = 220;
           var duration = 500;
-          jQuery(window).scroll(function() {
-              if (jQuery(this).scrollTop() > offset) {
-                  jQuery('.back-to-top').fadeIn(duration);
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > offset) {
+                  $('.back-to-top').fadeIn(duration);
               } else {
-                  jQuery('.back-to-top').fadeOut(duration);
+                  $('.back-to-top').fadeOut(duration);
               }
           });
           
-          jQuery('.back-to-top').click(function(event) {
+          $('.back-to-top').click(function(event) {
               event.preventDefault();
-              jQuery('html, body').animate({scrollTop: 0}, duration);
+              $('html, body').animate({scrollTop: 0}, duration);
               return false;
           })
       });
       </script>
       <style>
-      .back-to-top:hover {    
-          background-color: rgba(135, 135, 135, 0.50);
-      }
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
 
     </style>
 	</head>
@@ -101,13 +114,14 @@
 		            </center> </br>
 		            {{/each}}
 
-                <center><a href="#" class="back-to-top" style="text-decoration: none;">Back to Top</a></center>
 
                 </div> <!-- Close COL -->
                 
             </div> <!-- Close ROW -->
 
         </div><!-- Close CONTAINER -->
+                        <a href="#" class="back-to-top">Back to Top</a>
+
 
   
     
