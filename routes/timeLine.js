@@ -3,7 +3,7 @@
 var data = require('../data.json');
 
 exports.addTimeLine = function(req, res) { 
-<<<<<<< HEAD
+
 
 
 	if(!req.query.time){
@@ -30,7 +30,7 @@ exports.addTimeLine = function(req, res) {
 		
 		res.render('timeLine', data);
 	}
-=======
+
 	// Your code goes here
 if(req.session.template){
     //Here instead explicitly render the index or index_alternate, we will render 
