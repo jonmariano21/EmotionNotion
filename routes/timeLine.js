@@ -87,7 +87,6 @@ if(req.session.template){
   data["emotions"].push(newEntry);
   
   res.render('timeLine', data); 
->>>>>>> origin/master
 
 }
     }else{
