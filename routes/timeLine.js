@@ -4,8 +4,14 @@ var data = require('../data.json');
 
 exports.addTimeLine = function(req, res) { 
 	// Your code goes here
+
+  if(!req.query.time){
+  		res.render('timeLine', data);
+  }
+  else{
+
   var current = req.query.time.split("z");
-  var timestamp = current[0]+" "+current[1]+" "+current[2]+" "+current[3]+" at "+current[4];
+  var timestamp = current[0]+", "+current[1]+" "+current[2]+", "+current[3]+" at "+current[4] + ".";
   var newEntry = 
 	{
 		'name': req.query.face,
@@ -26,6 +32,7 @@ exports.addTimeLine = function(req, res) {
        
 
 }
+}
 
 /*
 exports.view = function(req, res){
@@ -33,6 +40,3 @@ exports.view = function(req, res){
 	res.render('timeLine', data);
 };
 */
-
-
-
