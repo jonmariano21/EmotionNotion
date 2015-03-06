@@ -6,6 +6,7 @@ exports.addDescription = function(req, res){
   var name = req.query.face;
 
   var date = new Date();
+  date.setHours(date.getHours()-8);
   var year = date.getFullYear();
   var month = date.getMonth();
   var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
