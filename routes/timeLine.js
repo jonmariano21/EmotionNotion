@@ -28,7 +28,7 @@ if(req.session.template){
 
   console.log(newEntry);
   
-  data["emotions"].push(newEntry);
+  data["emotions"].unshift(newEntry);
 
     res.render(req.session.template, data);
   }
@@ -57,7 +57,7 @@ if(req.session.template){
 
   console.log(newEntry);
   
-  data["emotions"].push(newEntry);
+  data["emotions"].unshift(newEntry);
   
   res.render('timeLine', data); 
 
@@ -85,7 +85,7 @@ if(req.session.template){
 
   console.log(newEntry);
   
-  data["emotions"].push(newEntry);
+  data["emotions"].unshift(newEntry);
   
   res.render('timeLineAlt', data); 
 
