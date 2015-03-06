@@ -33,6 +33,7 @@ if(req.session.template){
     res.render(req.session.template, data);
   }
   }else{
+    // made version A permanent
     var random_num = 1;
     if(random_num > 0.5){
       //Here we set the session for the user to use index.handlerbar
